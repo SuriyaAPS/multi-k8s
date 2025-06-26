@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+
+kind: Certificate
+metadata:
+  name: kssp-3utilities-com-tls
+spec:
+  secretName: kssp-3utilities-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClientIssuer
+  commonNames: kssp.3utilities.com
+  dnsNames:
+    - kssp.3utilities.com
+    # - www.kssp.3utilities.com

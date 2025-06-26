@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+kind: ClientIssuer
+metadata:
+  name: letsencrypt-prod
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: "sivasuriyaprakash@k8s.io"
+    privateKeySecretRef:
+      name: letsencrypt-prod
+    solvers:
+      - http01:
+          ingress:
+            class: nginx

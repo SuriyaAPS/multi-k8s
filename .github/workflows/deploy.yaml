@@ -63,4 +63,4 @@ jobs:
           kubectl apply -f k8s
           kubectl set image deployments/server-deployment server-pod=ksspam/multi-server-up:${{ env.SHA }}
           kubectl set image deployments/client-deployment client-pod=ksspam/multi-client-up:${{ env.SHA }}
-          kubectl set image deployments/worker-deployment worker-pod=ksspam/multi-worker-up:${{ env.SHA }}
+          kubectl set image deployments/work-deployment worker-pod=ksspam/multi-worker-up:${{ env.SHA }}

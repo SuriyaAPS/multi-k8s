@@ -7,7 +7,7 @@ spec:
   secretName: kssp-3utilities-com
   issuerRef:
     name: letsencrypt-prod
-    kind: ClientIssuer
+    kind: ClusterIssuer
   commonName: kssp.3utilities.com
   dnsNames:
     - kssp.3utilities.com

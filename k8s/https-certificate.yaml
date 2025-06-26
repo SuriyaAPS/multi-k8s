@@ -8,7 +8,7 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClientIssuer
-  commonNames: kssp.3utilities.com
+  commonName: kssp.3utilities.com
   dnsNames:
     - kssp.3utilities.com
     # - www.kssp.3utilities.com
